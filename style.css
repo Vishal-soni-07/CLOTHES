@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+*::selection{
+    color: white;
+    background-color: black;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #f7f7f7;
+    font-family: 'Times New Roman', Times, serif;
+}
+#nav{
+    min-height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#ksheer{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    overflow: hidden;
+}
+#ksheer #logo {
+    margin-left: 20px;
+    font-style: italic;
+    font-size: 50px;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 0;
+}
+#nav p{
+    display: inline;
+    text-align: center;
+    font-size: 100px;
+    color: black ;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-basis: 500px;
+}
+#nav-part1 #nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-right: 60px;
+}
+#nav-part1 #nav-part2 a{
+    font-size: 15px;
+    color: black ;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+
+}
+#nav-part1 #links{
+    background-color: #f7f7f7;
+    border-radius:20px;
+    display: inline-block;
+    padding: 10px;
+}
+#nav-part1 #links i{
+margin-right: 20px;
+font-size: 20px ;
+color: black;
+}
+#cursor{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 200);
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0) ;
+
+}
+#page1{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding: 18vh 2vw 0 2vw;
+}
+#page1 h1{
+    color: white;
+    font-size: 14vw;
+    line-height: 25vh;
+    text-align: center;
+    background-image: url("logocolor.jpg");
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
+#video-container{
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+    margin-top: 1vw;
+    position: relative;
+}
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video-container #play{
+    padding: 1vw 0.5vw;
+    background-color: black;
+    color: white ;
+    position: fixed;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 50%;
+    font-size: 1vw;
+    opacity: 0;
+    scale: 0;
+}
+#page2{
+    height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    padding: 2vw 2vw ;
+    
+}
+#page2 .elen{
+    height: 100%;
+    width: 31%;
+    /*background-color: aqua;*/
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page2 .elen img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale:1.1;
+}
+.elen .dets{
+ height: 60px;
+ width: 70%;
+ background-color: palegoldenrod;
+ border-radius: 50px;
+ position: absolute;
+ z-index: 9;
+}
+.elen .dets:hover{
+    height: 200px;
+}
+#page3{
+    min-width: 120vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 2vw 2vw ;
+
+}
+#page3 .child{
+    height: 45vh;
+    width: 38vw;
+    margin: 2vw;
+}
+#page3 .child img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+@media (max-width:600px){
+    #nav{
+        min-height: 100px;
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    #ksheer{
+        display: flex;
+        flex-direction: column;
+        height: 40px;
+        overflow: hidden;
+    }
+    #ksheer #logo{
+        font-style: italic;  
+        height: 40px;
+        font-size: 40px;
+        margin-right: -20px;
+    }
+    #nav p{
+        display: inline;
+        text-align: center;
+        font-size: 35px;
+        color: black ;
+        margin-left: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+    }
+    #nav-part1{
+        display: flex;
+        align-items: center;
+        justify-content:right;
+        flex-basis: 500px;
+        padding-right: 20px;
+    }
+    #nav-part1 #nav-part2{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        margin-right: 60px;
+    }
+    #nav-part1 #nav-part2 a{
+        font-size: 15px;
+        color: black ;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: lighter;
+    
+    }
+    #nav-part1 #links{
+        background-color: #f7f7f7;
+        border-radius:20px;
+        display: inline-block;
+        padding: 10px;
+    }
+    #nav-part1 #links i{
+    margin-right: 20px;
+    font-size: 20px ;
+    color: black;
+    }
+    #page1{
+        min-height: 25vh;
+        position: relative;
+        width: 100%;
+        padding: 18vh 3vw 0 3vw;
+    }
+    #page1 h1{
+        font-size: 14vw;
+        line-height: 10vh;
+        letter-spacing: -3px;
+
+    }
+    #video-container{
+        height: 25vh;
+        margin-top: 1vw;
+    }
+    #video-container video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #video-container #play{
+        padding: 7.5vw 5vw;
+        left: 40%;
+        top: 20%;
+        position: absolute;
+        border-radius: 50%;
+        font-size: 4vw;
+        opacity: 1;
+        scale: 1;
+    }
+    #page2{
+        min-height: 300vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vw 3vw ; 
+    }
+    #page2 .elen{
+        height: 100vh;
+        width: 100%;
+        /*background-color: aqua;*/
+        overflow: hidden;
+        margin-bottom: 3vw;
+    }
+    #page3{
+        min-width: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 2vw ;
+        margin-left:-30px;
+    
+    }
+    #page3 .child{
+        height: 45vh;
+        width: 38vw;
+        margin: 2vw;
+        flex-basis: 250px;
+    }
+    #page3 .child img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
